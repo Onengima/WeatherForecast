@@ -7,7 +7,7 @@ namespace WeatherForecast
 {
     class WeatherInfoNext6Days
     {
-        public int code;
+        public string code;
         public DataNext6Days data;
         public string msg;
         public RC rc;
@@ -15,7 +15,7 @@ namespace WeatherForecast
 
     class WeatherNow
     {
-        public int code;
+        public string code;
         public DataNow data;
         public string msg;
         public RC rc;
@@ -24,22 +24,22 @@ namespace WeatherForecast
     class Forecast
     {
         public string conditionDay;
-        public int conditionIdDay;
-        public int conditionIdNight;
+        public string conditionIdDay;
+        public string conditionIdNight;
         public string conditionNight;
         public string predictDate;
-        public int tempDay;
-        public int tempNight;
+        public string tempDay;
+        public string tempNight;
         public string updatetime;
         public string windDirDay;
         public string windDirNight;
-        public int windLevelDay;
-        public int windLevelNight;
+        public string windLevelDay;
+        public string windLevelNight;
     }
 
     class City
     {
-        public int cityId;
+        public string cityId;
         public string counname;
         public string name;   //区名
         public string pname;   //城市名
@@ -59,18 +59,31 @@ namespace WeatherForecast
 
     class RC
     {
-        public int c;
+        public string c;
         public string p;
     }
 
     class Condition
     {
         public string condition;
-        public int humidity;
+        public string humidity;
         public int icon;
-        public int temp;
+        public string temp;
         public string updatetime;
         public string windDir;
-        public int windLevel;
+        public string windLevel;
+    }
+
+    class CityItem
+    {
+        public String Cityname { get; set; }
+        public double lat;
+        public double lon;
+        public CityItem() { }
+        public CityItem(double la,double lo)
+        {
+            lat = la;
+            lon = lo;
+        }
     }
 }

@@ -5,22 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherForecast"
         mc:Ignorable="d"
-        Title="WeatherShow" Height="560.367" Width="918.562" MinWidth="918" MinHeight="560">
+        Title="WeatherShow" Height="560.367" Width="1066.705" MinWidth="918" MinHeight="560">
     <Grid Loaded="Grid_Loaded" Margin="10,10,9.8,10.4">
-        <Image x:Name="imgMainShow" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="301"/>
-        <Label x:Name="lblMainShow" Content="Label" HorizontalAlignment="Left" Margin="507,65,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="lblTmpShow" Content="Label" HorizontalAlignment="Left" Margin="668,65,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="lblCityShow" Content="Label" HorizontalAlignment="Left" Margin="316,65,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="lblHumidityShow" Content="Label" HorizontalAlignment="Left" Margin="316,152,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="lblWindDirShow" Content="Label" HorizontalAlignment="Left" Margin="507,152,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="lblWindLevelShow" Content="Label" HorizontalAlignment="Left" Margin="668,152,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="lblUpdateTimeShow" Content="Label" HorizontalAlignment="Left" Margin="316,192,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="lblNext1" Content="Label" HorizontalAlignment="Left" Margin="145,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblNext2" Content="Label" HorizontalAlignment="Left" Margin="264,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblNext3" Content="Label" HorizontalAlignment="Left" Margin="388,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblNext4" Content="Label" HorizontalAlignment="Left" Margin="512,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblNext5" Content="Label" HorizontalAlignment="Left" Margin="636,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblNext6" Content="Label" HorizontalAlignment="Left" Margin="760,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
-        <Label x:Name="lblName" Content="Label" HorizontalAlignment="Left" Margin="48,293,0,0" VerticalAlignment="Top" Height="207" Width="74"/>
+        <Image x:Name="imgMainShow" Height="301" Margin="171,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="301"/>
+        <Label x:Name="lblMainShow" Content="Label" HorizontalAlignment="Left" Margin="477,101,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label x:Name="lblTmpShow" Content="Label" HorizontalAlignment="Left" Margin="621,101,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label x:Name="lblCityShow" Content="Label" HorizontalAlignment="Left" Margin="477,26,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label x:Name="lblHumidityShow" Content="Label" HorizontalAlignment="Left" Margin="477,176,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lblWindDirShow" Content="Label" HorizontalAlignment="Left" Margin="668,176,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lblWindLevelShow" Content="Label" HorizontalAlignment="Left" Margin="829,176,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lblUpdateTimeShow" Content="Label" HorizontalAlignment="Left" Margin="477,216,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="lblNext1" Content="Label" HorizontalAlignment="Left" Margin="306,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblNext2" Content="Label" HorizontalAlignment="Left" Margin="425,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblNext3" Content="Label" HorizontalAlignment="Left" Margin="549,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblNext4" Content="Label" HorizontalAlignment="Left" Margin="673,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblNext5" Content="Label" HorizontalAlignment="Left" Margin="797,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblNext6" Content="Label" HorizontalAlignment="Left" Margin="921,293,0,0" VerticalAlignment="Top" Height="207" Width="119"/>
+        <Label x:Name="lblName" Content="Label" HorizontalAlignment="Left" Margin="209,293,0,0" VerticalAlignment="Top" Height="207" Width="74"/>
+        <TextBox x:Name="tbSearch" HorizontalAlignment="Left" Height="23" Margin="-1,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnAdd" Content="添加" HorizontalAlignment="Left" Margin="0,0,0,10" Width="85" Click="btnAdd_Click" Height="24" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnDelete" Content="删除" HorizontalAlignment="Left" Margin="90,0,0,10" Width="76" Click="btnDelete_Click" Height="24" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnSearch" Content="搜索" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="46" Height="23" Click="btnSearch_Click"/>
+        <WebBrowser x:Name="wbMap" HorizontalAlignment="Left" Height="68" Margin="974,10,0,0" VerticalAlignment="Top" Width="66" Loaded="wbMap_Loaded" Visibility="Hidden"/>
+        <ListBox x:Name="lbCity" HorizontalAlignment="Left" Margin="0,38,0,39" Width="166" SelectionChanged="lbCity_SelectionChanged"/>
     </Grid>
 </Window>
